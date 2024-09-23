@@ -17,7 +17,7 @@ This repository contains data science projects focused on solving **regression p
 
 .
 - [Project Files](./the_effect_of_foreign_trade_on_Egptian_gdp)
-- 
+  
 **Description**: Measure the effect of foreign trade (exports, imports) and other economic features (like debt and foreign assets) on Egypt's GDP using time series regression models.
 - **Techniques**: ElisticNet Regression, VAR Model, SVR model, and LSTM.
 - **Dataset**: GDP data.
@@ -25,7 +25,7 @@ This repository contains data science projects focused on solving **regression p
 
 ## 2. Predicting the effect of the Telecom sector on GDP
 
-- [Project Files](./Predicting the effect of the Telecom sector on GDP)
+- [Project Files](./Predicting_the_effect_of_the_Telecom_sector_on_GDP)
   
 **Description**: Predicting the effect of the Telecom sector on Egypt's GDP using time series regression models.
 - **Techniques**: Ridge -VAR -Xgboost -RandomForest.
@@ -35,6 +35,8 @@ This repository contains data science projects focused on solving **regression p
 ---
 
 ## 3. Understand what factors influence non-performing loans
+
+- [Project Files](./factors_influence_non-performing_loans)
 
 ### Problem Overview
 
