@@ -27,8 +27,6 @@ Significant contributors to Egypt's GDP included:
 Exports: Electric appliances & equipment.
 Imports: Fuel, Mineral Oils & Products, Textile Materials.
 Economic Indicators: Net Domestic Debt, Total External Debt, Government Deposits.
-Our analysis found that LSTM models excel in predictive accuracy, outperforming Ridge Regression, Support Vector Regression, and VAR models in capturing the complexities of Egypt's economic growth.
+Our analysis found that LSTM models excel in predictive accuracy, outperforming Ridge Regression, Support Vector Regression, and VAR models in capturing Egypt's economic growth complexities.
 
-**🏷️ Keywords:**
 
-Foreign trade, Egyptian GDP, Elastic Net Regression, LSTM, Machine Learning, Support Vector Machine, Ridge Regression, Vector Autoregression
