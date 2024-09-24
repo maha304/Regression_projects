@@ -71,7 +71,7 @@ rf_model.fit(X_train, y_train)
 # Predictions
 y_pred = rf_model.predict(X_test)
 
-# Dependencies:
+### Dependencies:
 
 Most of the dependencies are installed automatically. But, if not installed when you install MSDA, then these dependencies must be installed as shown below.
 
@@ -85,7 +85,8 @@ pip install sklearn
 pip install scipy
 pip install keras
 
-# Evaluation
+### Evaluation:
+
 mse = mean_squared_error(y_test, y_pred)
 r2 = r2_score(y_test, y_pred)
 
