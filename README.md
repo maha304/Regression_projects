@@ -62,15 +62,15 @@ This repository contains data science projects focused on solving **regression p
 
 Most of the dependencies are installed automatically. But, if not installed when you install MSDA, then these dependencies must be installed as shown below.
 
-pip install pandas
-pip install numpy
-pip install matplotlib
-pip install datetime
-pip install statistics
-pip install seaborn
-pip install sklearn
-pip install scipy
-pip install keras
+*pip install pandas*
+*pip install numpy*
+*pip install matplotlib*
+*pip install datetime*
+*pip install statistics*
+*pip install seaborn*
+*pip install sklearn*
+*pip install scipy*
+*pip install keras*
 
 ### Example Code for Modeling
 
@@ -84,20 +84,6 @@ rf_model.fit(X_train, y_train)
 
 # Predictions
 y_pred = rf_model.predict(X_test)
-
-### Dependencies:
-
-Most of the dependencies are installed automatically. But, if not installed when you install MSDA, then these dependencies must be installed as shown below.
-
-pip install pandas
-pip install numpy
-pip install matplotlib
-pip install datetime
-pip install statistics
-pip install seaborn
-pip install sklearn
-pip install scipy
-pip install keras
 
 Evaluation:
 
