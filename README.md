@@ -1,4 +1,4 @@
-# ML-DL-and-EDA-Showcase-for--Regression- problems
+# Overview
 "Exploring real-world datasets focused on solving Regression and Classification problems using machine learning, deep learning, data visualization, and statistical analysis techniques to derive actionable insights."
 
 # Regression Projects Portfolio
@@ -71,9 +71,22 @@ rf_model.fit(X_train, y_train)
 # Predictions
 y_pred = rf_model.predict(X_test)
 
+# Dependencies:
+
+Most of the dependencies are installed automatically. But, if not installed when you install MSDA, then these dependencies must be installed as shown below.
+
+pip install pandas
+pip install numpy
+pip install matplotlib
+pip install datetime
+pip install statistics
+pip install seaborn
+pip install sklearn
+pip install scipy
+pip install keras
+
 # Evaluation
 mse = mean_squared_error(y_test, y_pred)
 r2 = r2_score(y_test, y_pred)
-print(f"Mean Squared Error: {mse}")
-print(f"R-Squared: {r2}")
+
 
