@@ -27,7 +27,7 @@ This analysis zooms in on which exports and imports have had the greatest impact
 
 # Edge techniques like:
 
-Elastic Net Regression for features selection
+Elastic Net Regression for feature selection
 Time Series Modeling (LSTM, Ridge Regression, SVR)
 
 **📈 Key Findings:**
@@ -40,6 +40,6 @@ Imports: Fuel, Mineral Oils & Products, Textile Materials.
 
 Economic Indicators: Net Domestic Debt, Total External Debt, Government Deposits.
 
-Our analysis found that LSTM models excel in predictive accuracy, outperforming Ridge Regression, Support Vector Regression, and VAR models in capturing Egypt's economic growth complexities.
+## Our analysis found that LSTM models excel in predictive accuracy, outperforming Ridge Regression, and Support Vector Regression models in capturing Egypt's economic growth complexities.
 
 
