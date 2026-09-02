@@ -32,7 +32,7 @@ The experiment analyzed **290,584 valid user records** using probability analysi
 
 | Project | Business or research question | Methods |
 |---|---|---|
-| Foreign trade and Egyptian GDP | How do exports, imports, debt, and foreign assets relate to GDP? | Time-series EDA, Elastic Net, VAR, SVR, LSTM |
+| [Foreign trade and Egyptian GDP](./the_effect_of_foreign_trade_on_Egptian_GDP) | Which trade and macroeconomic indicators contain useful information for explaining and predicting GDP? | ADF, Granger, Johansen, Elastic Net, Ridge, SVR |
 | Telecom sector and GDP | What is the relationship between telecom-sector indicators and economic output? | Ridge, VAR, XGBoost, Random Forest |
 | Prosper loan exploration | Which borrower and loan characteristics are associated with lending outcomes? | Data cleaning, univariate and multivariate EDA |
 
