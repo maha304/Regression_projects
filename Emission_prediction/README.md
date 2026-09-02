@@ -1,56 +1,54 @@
-# 🌍 Emissions Forecasting using Machine Learning
+# Carbon Emissions Forecasting
 
-## 📘 Project Description
+## Problem
 
-This project aims to analyze and forecast carbon emissions using multiple machine learning models, with a focus on the relationship between emissions and key economic and environmental indicators.
+Understanding how economic development and energy use relate to carbon emissions can support environmental planning. This project evaluates whether a small set of economic and environmental indicators can produce reliable emissions forecasts.
 
-The work was developed for a master's research application and includes full model development, evaluation, forecasting, and deployment-ready code.
+## Questions Answered
 
----
+- How strongly are emissions related to GDP per capita, fossil-fuel consumption, and urbanization?
+- Which model generalizes best to later years?
+- How closely do predicted emissions follow the observed chronological trend?
+- Which model should be used for short-horizon scenario forecasting?
 
-## 🎯 Objective
+## Approach
 
-To investigate how selected independent variables, such as:
+1. Cleaned and explored the historical time-series data.
+2. Preserved chronological order when creating the test set.
+3. Trained SVR, XGBoost, and Random Forest regressors.
+4. Compared R², RMSE, MAE, and MAPE on unseen later observations.
+5. Used the selected model for recursive forecasts through 2026.
 
-- **GDP per capita**
-- **Fossil fuel consumption**
-- **Urbanization rate**
+## Model Comparison
 
-affect the dependent variable:
+| Model | Test R² | RMSE | MAE | MAPE |
+|---|---:|---:|---:|---:|
+| SVR | 0.97 | 0.11 | 0.08 | 5.80% |
+| XGBoost | 0.98 | 0.10 | 0.08 | 5.91% |
+| **Random Forest** | **0.98** | **0.08** | **0.07** | **4.69%** |
 
-- **Carbon Emissions (Y)**
+![Random Forest actual versus predicted emissions](../assets/emissions-actual-vs-predicted.png)
 
----
+## Key Finding
 
-## 🛠️ Tools & Techniques
+Random Forest delivered the strongest overall test performance and tracked the observed trend closely. The result demonstrates a practical forecasting workflow, while the small historical sample means future operational use would require additional data and uncertainty analysis.
 
-- Python (Pandas, Scikit-learn, XGBoost, Matplotlib, Seaborn, Streamlit)
-- Models:  SVR, Random Forest, XGBoost
-- Evaluation Metrics: R², RMSE, MAE, MAPE
-- Forecasting: Recursive predictions for future years (2024–2026)
-- Deployment: Streamlit web app
+## Repository Contents
 
----
+- `Data/data.csv` — historical modeling data
+- `Notebooks/Emission_prediction.ipynb` — complete analysis and modeling workflow
+- `Models/random_forest_model.pkl` — saved selected model
+- `Requirements.txt` — project dependencies
 
-## 📊 Model Comparison (Test Set Performance)
-
-| Model         | R² Score | RMSE  | MAE   | MAPE (%) |
-|---------------|----------|-------|-------|----------|
-| SVR           | 0.97     | 0.11  | 0.08  | 5.80     |
-| XGBoost       | 0.98     | 0.10  | 0.08  | 5.91     |
-| Random Forest | 0.98     | 0.08  | 0.07  | 4.69     |
-
-> ✅ **Random Forest** achieved the best overall performance on the test set.
-
----
-
-
-## 🚀 Deployment (Optional)
-
-A simple **Streamlit application** is available for users to input values and receive instant predictions.
-
-To run locally:
+## How to Run
 
 ```bash
-pip install streamlit joblib
-streamlit run app.py
+pip install -r Requirements.txt
+jupyter notebook Notebooks/Emission_prediction.ipynb
+```
+
+## Tools
+
+Python · Pandas · Scikit-learn · XGBoost · Matplotlib · Seaborn · Jupyter Notebook
+
+
